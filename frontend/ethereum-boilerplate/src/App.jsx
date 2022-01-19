@@ -18,6 +18,8 @@ import Contract from "components/Contract/Contract";
 import Text from "antd/lib/typography/Text";
 import Ramper from "components/Ramper";
 import MenuItems from "./components/MenuItems";
+import Dashboard from "components/Dashboard";
+import Portfolio from "components/Portfolio";
 const { Header, Footer } = Layout;
 
 const styles = {
@@ -103,10 +105,10 @@ const App = ({ isServerInfo }) => {
               <ERC20Balance />
             </Route>
             <Route path="/joeportfolio">
-              <div>hahahahahaha joe mama</div>
+            <Portfolio />
             </Route>
-            <Route path="/onramp">
-              <Ramper />
+            <Route path="/dashboard">
+              <Dashboard />
             </Route>
             <Route path="/erc20transfers">
               <ERC20Transfers />
